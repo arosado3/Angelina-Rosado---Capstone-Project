@@ -18,7 +18,6 @@ The average user would have to add their own question and possible outcomes.
     - Optional: The wheel will trigger haptics feedback to mimic a real roulette wheel
     
 1. User Stories (Required and Optional)
-
     Required Must-have Stories
 - "As an indecesive dinner guest, I want to spin a wheel with restaurant options so that my group can quickly pick a place to eat."
 
@@ -44,7 +43,8 @@ Flow Navigation (Screen to Screen)
         - Main (Clear)
 ...
 Wireframes
-[Add picture of your hand sketched wireframes in this section] 
+<img width="1818" height="1263" alt="IMG_1479" src="https://github.com/user-attachments/assets/18142956-9a1e-41de-86e0-839abe41f58c" />
+
 
 [BONUS] Digital Wireframes & Mockups
 [BONUS] Interactive Prototype
