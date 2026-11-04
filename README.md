@@ -45,3 +45,12 @@ Flow Navigation (Screen to Screen)
 
 **Wireframes**
 <img width="1818" height="1263" alt="IMG_1479" src="https://github.com/user-attachments/assets/18142956-9a1e-41de-86e0-839abe41f58c" />
+
+<div>
+    <a href="https://www.loom.com/share/2b16ffc21d0149d28703f89e6f3499f1">
+    </a>
+    <a href="https://www.loom.com/share/2b16ffc21d0149d28703f89e6f3499f1">
+      <img style="max-width:300px;" src="https://www.loom.com/v1/videos/2b16ffc21d0149d28703f89e6f3499f1/thumbnail.gif">
+    </a>
+  </div>
+
