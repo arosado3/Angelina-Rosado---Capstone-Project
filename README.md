@@ -27,20 +27,21 @@ The average user would have to add their own question and possible outcomes.
  - Selection: Displays the winning option once the wheel stops spinning
 
 **3. Navigation**
+
 Tab Navigation (Tab to Screen)
-    - Create Wheel: Where user can enter a question, add options, and build a wheel
-    - Settings: Preferences for haptic feedback intensity
+- Create Wheel: Where user can enter a question, add options, and build a wheel
+- Settings: Preferences for haptic feedback intensity
     
 Flow Navigation (Screen to Screen) 
-    - Screen 1: Main Navigation:
-        - Decision wheel screen
-        - Settings screen
-    - Screen 2: Decision Wheel Screen Navigation:
-        - Selection (Overlay appears when wheel finishes spinning )
-        - Main
-    - Screen 3: Selection (Overlay) Navigation:
-        - Decision wheel screen(Try again/Spin again)
-        - Main (Clear)
-...
-Wireframes
+- Screen 1: Main Navigation:
+    - Decision wheel screen
+    - Settings screen
+- Screen 2: Decision Wheel Screen Navigation:
+    - Selection (Overlay appears when wheel finishes spinning)
+    - Main
+- Screen 3: Selection (Overlay) Navigation:
+    - Decision wheel screen(Try again/Spin again)
+    - Main (Clear)
+
+**Wireframes**
 <img width="1818" height="1263" alt="IMG_1479" src="https://github.com/user-attachments/assets/18142956-9a1e-41de-86e0-839abe41f58c" />
