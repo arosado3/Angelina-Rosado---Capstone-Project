@@ -1,9 +1,9 @@
 Overview
+
 Description
 - An app that allows the user to create a question with a series of options to choose from. A wheel that is similiar to a roulette wheel will be created with the options displayed on it. The user will be able to spin the wheel and have a decision made for them depending on the outcome.
 
 App Evaluation
-
 - Mobile: Could trigger haptics feedback as the wheel spins to mimic a real physical roulette wheel
 Maybe also a shake to randomize features?
 - Story: I feel like this app would be really popular with indecisive people. I have seen a lot of couples use flashcards to decide on a place to go, so this app could be used instead as a substitution.
