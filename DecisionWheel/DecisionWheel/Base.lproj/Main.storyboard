@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wY6-pb-Pkv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="dg9-hy-mnY">
+            <objects>
+                <viewController title="Settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezI-RJ-lwz" customClass="SettingsViewController" customModule="DecisionWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KTK-gr-3Sb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cHU-2v-eoc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="i0A-XB-lSV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JY2-3I-mbw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="377"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="UfM-5D-azj">
+            <objects>
+                <tabBarController id="wY6-pb-Pkv" customClass="MainTabBarController" customModule="DecisionWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bOI-xQ-DND">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WE2-yc-YzU" kind="relationship" relationship="viewControllers" id="Y4g-pG-Wp4"/>
+                        <segue destination="ezI-RJ-lwz" kind="relationship" relationship="viewControllers" id="uvy-qe-yqc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpl-iC-c3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1447" y="-57"/>
+        </scene>
+        <!--Create Wheel-->
+        <scene sceneID="tfh-1i-cPo">
+            <objects>
+                <navigationController title="Create Wheel" automaticallyAdjustsScrollViewInsets="NO" id="WE2-yc-YzU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Create Wheel" image="circle.grid.cross" id="Elt-Tk-vOh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tJs-nS-EDA">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6k-ue-eDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-544.27480916030527" y="-361.26760563380282"/>
+        </scene>
+        <!--Main Navigation View Controller-->
+        <scene sceneID="RLp-Wb-zLG">
+            <objects>
+                <viewController id="zK6-RO-WqO" customClass="MainNavigationViewController" customModule="DecisionWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cKw-7k-qNV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9P-xS-KW3">
+                                <rect key="frame" x="134" y="614.33333333333326" width="126.66666666666669" height="40.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="+ Add Choice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYh-Sv-not">
+                                <rect key="frame" x="140" y="683" width="114.66666666666669" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Build Wheel"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Question" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoL-Cx-9hZ">
+                                <rect key="frame" x="113" y="102" width="167" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jfF-r5-S2n">
+                                <rect key="frame" x="20" y="174" width="353" height="104"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choice 1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIE-Ju-HZH">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Yc7-Bq-SGd"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="wcn-uK-cL0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choice 2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oS-EL-bgC">
+                                        <rect key="frame" x="0.0" y="54" width="353" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q9k-NP-tWR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q9k-NP-tWR" firstAttribute="trailing" secondItem="jfF-r5-S2n" secondAttribute="trailing" constant="20" id="4Tk-8Z-xzY"/>
+                            <constraint firstItem="hoL-Cx-9hZ" firstAttribute="top" secondItem="cKw-7k-qNV" secondAttribute="topMargin" constant="-16" id="8Ck-Qh-vc4"/>
+                            <constraint firstItem="jfF-r5-S2n" firstAttribute="top" secondItem="hoL-Cx-9hZ" secondAttribute="bottom" constant="16" id="8Q4-fm-HCg"/>
+                            <constraint firstItem="jfF-r5-S2n" firstAttribute="leading" secondItem="q9k-NP-tWR" secondAttribute="leading" constant="20" id="Lic-9A-QT0"/>
+                            <constraint firstItem="hoL-Cx-9hZ" firstAttribute="leading" secondItem="q9k-NP-tWR" secondAttribute="leading" constant="113" id="UPP-Nx-GVA"/>
+                            <constraint firstItem="F9P-xS-KW3" firstAttribute="centerX" secondItem="ZYh-Sv-not" secondAttribute="centerX" id="VRU-LS-jmh"/>
+                            <constraint firstItem="q9k-NP-tWR" firstAttribute="bottom" secondItem="ZYh-Sv-not" secondAttribute="bottom" constant="60" id="VmZ-UJ-6ry"/>
+                            <constraint firstItem="hoL-Cx-9hZ" firstAttribute="centerX" secondItem="cKw-7k-qNV" secondAttribute="centerX" id="Yqp-0D-7Rl"/>
+                            <constraint firstItem="ZYh-Sv-not" firstAttribute="top" secondItem="F9P-xS-KW3" secondAttribute="bottom" constant="29" id="hFp-Zj-KQZ"/>
+                            <constraint firstItem="F9P-xS-KW3" firstAttribute="leading" secondItem="q9k-NP-tWR" secondAttribute="leading" constant="134" id="pof-lV-39r"/>
+                            <constraint firstItem="ZYh-Sv-not" firstAttribute="leading" secondItem="q9k-NP-tWR" secondAttribute="leading" constant="140" id="sON-JB-xNr"/>
+                            <constraint firstItem="F9P-xS-KW3" firstAttribute="top" secondItem="jfF-r5-S2n" secondAttribute="bottom" constant="20" id="swN-4p-fig"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGi-nf-Wgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.82442748091603" y="-361.26760563380282"/>
+        </scene>
+        <!--Decision Wheel View Controller-->
+        <scene sceneID="DTk-a1-rHn">
+            <objects>
+                <viewController id="lV3-DG-bZd" customClass="DecisionWheelViewController" customModule="DecisionWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qHh-B2-3cP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xQu-gs-OZp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUn-XQ-G4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-361"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="s6U-Ux-b7W">
+            <objects>
+                <viewController id="iU5-GG-ZfE" customClass="SelectionViewController" customModule="DecisionWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZ7-Iw-Ff0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="J7t-cj-wZA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hp-d1-2ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.cross" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
