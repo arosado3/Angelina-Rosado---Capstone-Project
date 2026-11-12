@@ -1,3 +1,21 @@
+ ## Progress & Features Implemented
+
+### Architecture & Navigation Setup
+- **Tab Bar & Navigation Flow:** Configured `MainTabBarController` with a `UINavigationController` root flow separating the **Create Wheel** tab (`circle.grid.cross`) and **Settings** tab.
+- **Storyboard Scene Mapping:** Created and linked all five core view controller scenes to their corresponding Swift subclasses (`MainTabBarController`, `MainNavigationViewController`, `DecisionWheelViewController`, `SelectionViewController`, and `SettingsViewController`).
+
+### Create Wheel Screen (`MainNavigationViewController`)
+- **Question & Dynamic Choice Input UI:** Built the main entry interface with a question text field, a vertical `UIStackView` container configured with `Fill` alignment and `Fill Equally` distribution for dynamic option rows, and **+ Add Choice** / **Build Wheel** buttons.
+- **Auto Layout Constraints:** Configured responsive edge-to-edge constraints so the choice list fills the center of the screen cleanly across device sizes.
+
+<div>
+    <a href="https://www.loom.com/share/53e83810e6fc48e2ad79c05846f10397">
+    </a>
+    <a href="https://www.loom.com/share/53e83810e6fc48e2ad79c05846f10397">
+      <img style="max-width:300px;" src="https://www.loom.com/v1/videos/53e83810e6fc48e2ad79c05846f10397/thumbnail.gif">
+    </a>
+  </div>
+
 ## Overview
 
 **Description**
@@ -54,20 +72,3 @@ Flow Navigation (Screen to Screen)
     </a>
   </div>
   
- ## Progress & Features Implemented
-
-### Architecture & Navigation Setup
-- **Tab Bar & Navigation Flow:** Configured `MainTabBarController` with a `UINavigationController` root flow separating the **Create Wheel** tab (`circle.grid.cross`) and **Settings** tab.
-- **Storyboard Scene Mapping:** Created and linked all five core view controller scenes to their corresponding Swift subclasses (`MainTabBarController`, `MainNavigationViewController`, `DecisionWheelViewController`, `SelectionViewController`, and `SettingsViewController`).
-
-### Create Wheel Screen (`MainNavigationViewController`)
-- **Question & Dynamic Choice Input UI:** Built the main entry interface with a question text field, a vertical `UIStackView` container configured with `Fill` alignment and `Fill Equally` distribution for dynamic option rows, and **+ Add Choice** / **Build Wheel** buttons.
-- **Auto Layout Constraints:** Configured responsive edge-to-edge constraints so the choice list fills the center of the screen cleanly across device sizes.
-
-<div>
-    <a href="https://www.loom.com/share/53e83810e6fc48e2ad79c05846f10397">
-    </a>
-    <a href="https://www.loom.com/share/53e83810e6fc48e2ad79c05846f10397">
-      <img style="max-width:300px;" src="https://www.loom.com/v1/videos/53e83810e6fc48e2ad79c05846f10397/thumbnail.gif">
-    </a>
-  </div>
