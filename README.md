@@ -1,4 +1,4 @@
-Overview
+## Overview
 
 **Description**
 - An app that allows the user to create a question with a series of options to choose from. A wheel that is similiar to a roulette wheel will be created with the options displayed on it. The user will be able to spin the wheel and have a decision made for them depending on the outcome.
@@ -53,6 +53,7 @@ Flow Navigation (Screen to Screen)
       <img style="max-width:300px;" src="https://www.loom.com/v1/videos/2b16ffc21d0149d28703f89e6f3499f1/thumbnail.gif">
     </a>
   </div>
+  
  ## Progress & Features Implemented
 
 ### Architecture & Navigation Setup
