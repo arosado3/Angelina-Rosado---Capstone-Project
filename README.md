@@ -1,3 +1,12 @@
+##Walkthrough Video
+<div>
+    <a href="https://www.loom.com/share/84b0ab1f8bb14d898b262ff1d14e31c2">
+    </a>
+    <a href="https://www.loom.com/share/84b0ab1f8bb14d898b262ff1d14e31c2">
+      <img style="max-width:300px;" src="https://www.loom.com/v1/videos/84b0ab1f8bb14d898b262ff1d14e31c2/thumbnail.gif">
+    </a>
+  </div>
+  
 ## Updated Features
 - **Custom Decision Wheel Builder:** Enter a custom question (or fetch random meal prompts from TheMealDB public API via `URLSession` and `Codable`) and dynamically add or remove choice rows with a minimum two-choice validation.
 - **Interactive Wheel Physics & Feedback:** Smooth `CADisplayLink` rotation with friction deceleration, upright slice label rendering, and real-time slice-crossing audio ticks (`AudioToolbox`) paired with configurable `UIImpactFeedbackGenerator` haptics.
