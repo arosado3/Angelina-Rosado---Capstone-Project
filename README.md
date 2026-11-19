@@ -1,27 +1,8 @@
-## Capstone Technical Roadmap & Checklist
-
-### 1. Data Models & Persistence (`Models.swift` & `WheelStorageManager.swift`)
-- [ ] **Custom `Codable` Model:** Create `SavedWheel` struct (`id`, `question`, `choices`, `lastWinner`, `createdAt`) conforming to `Codable` and `Equatable`.
-- [ ] **Enums:** Implement `HapticIntensity` (`off`, `light`, `medium`, `heavy`) for user preferences and `WheelSpinState` (`ready`, `spinning`, `completed`) to manage wheel animations.
-- [ ] **`UserDefaults` Persistence:** Build `WheelStorageManager` to encode/decode `[SavedWheel]` and `HapticIntensity` locally so saved wheels and settings persist across app launches.
-
-### 2. Public API Integration (`MealAPIService.swift`)
-- [ ] **`URLSession` & Escaping Closure:** Connect to [TheMealDB API](https://www.themealdb.com/api.php) using `URLSession.shared.dataTask` with an `@escaping` completion handler (no `async/await`).
-- [ ] **JSON Parsing (`Codable`):** Parse API responses into `MealResponse` and `MealItem` structs.
-- [ ] **"Inspire Me" Feature:** Add an **Inspire Me** button on `MainNavigationViewController` to fetch random meal ideas and auto-populate the question and choice fields.
-
-### 3. Saved Wheels List (`UITableView`)
-- [ ] **Table View Integration:** Add a `UITableView` to `MainNavigationViewController` displaying previously created `SavedWheel` items and their last winning option.
-- [ ] **Selection & Deletion:** Support tapping a saved wheel row to load it directly into `DecisionWheelViewController` and swipe-to-delete to remove old wheels from `UserDefaults`.
-
-### 4. Wheel Interaction & Custom Protocol (`DecisionWheelViewController` & `SelectionViewController`)
-- [ ] **Roulette Wheel Rendering & Spin:** Draw dynamic wheel slices for each choice and animate a randomized spin using `WheelSpinState`.
-- [ ] **Custom Delegate Protocol:** Define `SelectionViewControllerDelegate` (`didTapSpinAgain()`, `didTapClearWheel()`) so `SelectionViewController` communicates back to `DecisionWheelViewController` when dismissed.
-- [ ] **Data Passing & Typecasting:** Pass `SavedWheel` and winning choice data across segues and modal presentations using safe optionals and typecasting (`as?`).
-
-### 5. Settings & Polish (`SettingsViewController`)
-- [ ] **Haptic Feedback:** Trigger `UIImpactFeedbackGenerator` during wheel spins based on the user's saved `HapticIntensity` selection.
-- [ ] **Submission Deliverables:** Record a screen capture demo of the app running in the simulator/device and prepare a 4-minute presentation walkthrough.
+## Updated Features
+- **Custom Decision Wheel Builder:** Enter a custom question (or fetch random meal prompts from TheMealDB public API via `URLSession` and `Codable`) and dynamically add or remove choice rows with a minimum two-choice validation.
+- **Interactive Wheel Physics & Feedback:** Smooth `CADisplayLink` rotation with friction deceleration, upright slice label rendering, and real-time slice-crossing audio ticks (`AudioToolbox`) paired with configurable `UIImpactFeedbackGenerator` haptics.
+- **Winner Selection & Delegate Callbacks:** Presents the winning slice in `SelectionViewController` with custom protocol callbacks (`SelectionViewControllerDelegate`) to immediately spin again or return to the wheel builder.
+- **Persistent Wheel History & Settings:** Saves created wheels, choice lists, last winners, and haptic preferences locally using `Codable` and `UserDefaults`.
 
  ## Progress & Features Implemented
 
